@@ -1,0 +1,15 @@
+# macOS
+.DS_Store
+
+# Node
+node_modules/
+
+# PHP vendor (if used)
+vendor/
+
+# Editor folders
+.vscode/
+.idea/
+
+# Logs
+*.log

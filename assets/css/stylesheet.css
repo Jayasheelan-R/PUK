@@ -1,0 +1,69 @@
+/* Converted from Sass to plain CSS */
+
+/* Note: removed Compass import and replaced Sass variables/mixins with plain CSS equivalents */
+
+.rwd-table {
+  margin: 1em 0;
+  min-width: 300px;
+  background: #34495E;
+  color: #fff;
+  border-radius: .4em;
+  overflow: hidden;
+}
+
+tr {
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  /* lighter variant of #34495E */
+  border-color: #485b6e;
+}
+
+th {
+  display: none;
+}
+
+td {
+  display: block;
+}
+
+th, td {
+  text-align: left;
+  margin: .5em 1em;
+}
+
+/* Breakpoint: replace $breakpoint-alpha (Sass variable) with 768px */
+@media (min-width: 768px) {
+  th, td {
+    display: table-cell;
+    padding: .25em .5em;
+  }
+  th:first-child, td:first-child {
+    padding-left: 0;
+  }
+  th:last-child, td:last-child {
+    padding-right: 0;
+  }
+  th, td {
+    padding: 1em !important;
+  }
+}
+
+@import 'https://fonts.googleapis.com/css?family=Montserrat:300,400,700';
+
+body {
+  font-family: Montserrat, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  color: #444;
+  background: rgb(113, 152, 223);
+}
+
+h1 {
+  font-weight: normal;
+  letter-spacing: -1px;
+  color: #34495E;
+}
+
+th, td:before {
+  color: #dddd55; /* expanded shorthand #dd5 */
+}
